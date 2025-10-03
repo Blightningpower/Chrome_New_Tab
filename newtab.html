@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nieuw tabblad</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="center">
+    <!-- Gekleurd 'Google'-logo als inline SVG -->
+    <svg class="logo" viewBox="0 0 600 200" aria-label="Google" role="img">
+      <!-- Dit is een eenvoudige, getrouwe benadering; per letter eigen kleur -->
+      <text x="0"  y="150" font-size="140" font-family="Product Sans, Arial, sans-serif" fill="#4285F4">G</text>
+      <text x="120" y="150" font-size="140" font-family="Product Sans, Arial, sans-serif" fill="#DB4437">o</text>
+      <text x="200" y="150" font-size="140" font-family="Product Sans, Arial, sans-serif" fill="#F4B400">o</text>
+      <text x="280" y="150" font-size="140" font-family="Product Sans, Arial, sans-serif" fill="#4285F4">g</text>
+      <text x="360" y="150" font-size="140" font-family="Product Sans, Arial, sans-serif" fill="#0F9D58">l</text>
+      <text x="400" y="150" font-size="140" font-family="Product Sans, Arial, sans-serif" fill="#DB4437">e</text>
+    </svg>
+
+    <!-- Zoekbalk die zoekt via Google -->
+    <form class="search" action="https://www.google.com/search" method="GET">
+      <input name="q" type="text" placeholder="Zoek met Google of voer een URL in" autofocus />
+      <button aria-label="Zoeken">🔎</button>
+    </form>
+
+    <!-- Snelkoppelingen (vergelijkbaar met de bubbels) -->
+    <section id="topsites" class="topsites" aria-label="Vaak bezochte sites"></section>
+  </main>
+
+  <!-- Achtergrondafbeelding past zich aan je thema niet automatisch aan; zet hier jouw eigen wallpaper -->
+  <div class="wallpaper"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
