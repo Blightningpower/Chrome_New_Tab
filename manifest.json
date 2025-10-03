@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Custom New Tab (Gekleurd Google-logo)",
+  "name": "Custom Nieuw Tabblad",
   "version": "1.0.0",
   "description": "Vervangt het nieuwe tabblad en toont een eigen Google-achtige pagina met gekleurd SVG-logo.",
   "chrome_url_overrides": { "newtab": "newtab.html" },
