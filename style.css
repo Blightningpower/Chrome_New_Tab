@@ -1,0 +1,44 @@
+:root { --glass: rgba(255,255,255,.12); --glass2: rgba(255,255,255,.18); }
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { font: 16px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: #eaeaea; }
+
+.wallpaper {
+  position: fixed; inset: 0;
+  background: #000 url("nebula.jpg") center/cover no-repeat fixed; /* vervang door je eigen afbeelding */
+  z-index: -1;
+}
+
+.center { max-width: 900px; margin: 12vh auto 0; padding: 0 24px; text-align: center; }
+
+.logo { width: 420px; height: auto; display: block; margin: 0 auto 28px; filter: drop-shadow(0 2px 12px rgba(0,0,0,.6)); }
+
+.search {
+  display: flex; gap: 8px; align-items: center; justify-content: center;
+  max-width: 720px; margin: 0 auto 28px; padding: 10px 12px;
+  background: var(--glass); backdrop-filter: blur(8px); border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.08);
+}
+.search input {
+  flex: 1; min-width: 0; background: transparent; border: none; outline: none;
+  padding: 10px 12px; color: #fff; font-size: 16px;
+}
+.search button {
+  border: none; background: var(--glass2); padding: 10px 14px; border-radius: 999px; cursor: pointer; color: #fff;
+}
+
+.topsites {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 16px; max-width: 780px; margin: 0 auto;
+}
+.site {
+  display: grid; place-items: center; gap: 10px; padding: 16px 10px;
+  background: var(--glass); border: 1px solid rgba(255,255,255,.08);
+  border-radius: 16px; text-decoration: none; color: #fff;
+}
+.site .favicon {
+  width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,.12);
+  display: grid; place-items: center; overflow: hidden;
+}
+.site img { width: 24px; height: 24px; }
+.site .title { font-size: 13px; opacity: .9; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 98px; }
